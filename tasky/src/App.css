@@ -91,6 +91,9 @@ input[type=text], input[type=date] {
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
+  background-color: azure;
+  font-family: inherit;
+  height: 45px;
 }
 
 input[type=submit] {
@@ -114,5 +117,13 @@ form {
   margin: auto;
 }
 
+select{
+  background-color: azure;
+  width: 150px;
+  height: 50px;
+  border-radius: 4px;
+  margin: 8px 0;
+  display: block;
+}
 
 
