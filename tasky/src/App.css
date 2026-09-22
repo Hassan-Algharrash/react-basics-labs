@@ -47,3 +47,19 @@ div {
   margin-top: 10px;
 }
 
+.priority {
+    font-weight: bold;
+    padding: 2px 6px;
+    border-radius: 4px;
+    display: inline-block;
+
+    .low { color: #28a745; }
+.medium { color: #ffc107; }
+.high { color: #dc3545; }
+}
+
+.low { color: #28a745; }
+.medium { color: #ffc107; }
+.high { color: #dc3545; }
+
+
