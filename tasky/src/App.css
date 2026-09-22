@@ -53,13 +53,27 @@ div {
     border-radius: 4px;
     display: inline-block;
 
-    .low { color: #28a745; }
-.medium { color: #ffc107; }
-.high { color: #dc3545; }
 }
 
 .low { color: #28a745; }
 .medium { color: #ffc107; }
 .high { color: #dc3545; }
+
+button {
+  border: none;
+  border-radius: 3px;
+  font-style: italic;
+  font-size: 0.8em;
+  margin: 4px 6px;
+  width: 50px;
+  height: 25px;
+}
+
+.doneButton {
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  color: green;
+}
 
 
