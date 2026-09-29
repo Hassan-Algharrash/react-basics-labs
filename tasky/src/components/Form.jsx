@@ -11,8 +11,7 @@ const AddTaskForm = (props) => {
   sx={{
     '& .MuiOutlinedInput-root': { m: 1,
        width: '30ch',
-       borderColor: '#db7093', 
-        color: 'white',
+        color: 'black',
         fontWeight: 'bold',
         fontFamily: 'Copperplate, sans-serif',
         borderRadius: '8px',

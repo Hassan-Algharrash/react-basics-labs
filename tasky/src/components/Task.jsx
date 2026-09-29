@@ -6,7 +6,8 @@ import CardContent from '@mui/material/CardContent';
 import CardHeader from '@mui/material/CardHeader';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
-
+import DeleteIcon from '@mui/icons-material/Delete';
+import DoneIcon from '@mui/icons-material/Done';
 
 
 
@@ -73,6 +74,7 @@ const Task = (props) => {
         size="small"
         color="success"
         onClick={props.markDone}
+        startIcon={<DoneIcon/>}
       >
         Done
       </Button>
@@ -82,6 +84,8 @@ const Task = (props) => {
         size="small"
         color="error"
         onClick={props.deleteTask}
+        startIcon={<DeleteIcon/>}
+
       >
         Delete
       </Button>

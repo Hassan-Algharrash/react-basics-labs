@@ -6,6 +6,9 @@ import AddTaskForm from './components/Form';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
+import Alert from '@mui/material/Alert';
+
+
 
 
 
@@ -26,6 +29,8 @@ function App() {
     deadline: "",
     priority: ""
   });
+
+  const [showAlert, setShowAlert] = useState(false);
 
 
     const doneHandler = (taskIndex) => {
@@ -74,6 +79,8 @@ function App() {
     
     tasks.push(form);
     setTaskState({tasks});
+
+    setShowAlert(true);
   }
 
 
@@ -102,6 +109,25 @@ function App() {
   >
     Tasky
   </Typography>
+
+  {showAlert && (
+    <Alert  severity="success" 
+            variant="outlined"
+            onClose={() => setShowAlert(false)}
+            sx={{
+              mb: 4,
+              borderRadius: '12px',
+              backgroundColor: '#f3e9ec', 
+              color: '#db7093',
+              borderColor: '#db7093',
+              fontFamily: 'Copperplate',
+              fontWeight: 'bold',
+              '& .MuiAlert-icon': { color: '#db7093' }
+            }} >
+            Task added!!!
+     
+    </Alert>
+  )}
 </Container>
 {/* End App Header */}
 
