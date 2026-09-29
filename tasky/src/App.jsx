@@ -89,12 +89,15 @@ function App() {
     align="center"
     gutterBottom
     sx={{
-      backgroundColor: 'gray',
+      backgroundColor: '#db7093',
       textAlign: 'center',
-      color: 'white',
+      color: 'black',
       padding: '20px',
       margin: '20px 0 40px 0',
-      borderRadius: '4px'
+      borderRadius: '12px',
+      fontFamily: 'Copperplate ',
+      fontWeight: 'bold',
+      letterSpacing: '2px'
     }}
   >
     Tasky
@@ -125,7 +128,9 @@ function App() {
     ))}
   </Grid>
 </Container>
-{/* End Task Card Grid */}{/* Footer - Add Task Form */}
+{/* End Task Card Grid */}
+
+{/* Footer - Add Task Form */}
 <Container
   component="footer"
   sx={{

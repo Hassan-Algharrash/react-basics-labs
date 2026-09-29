@@ -18,15 +18,16 @@ const Task = (props) => {
 >
   <Card
     sx={{
-      backgroundColor: props.done ? 'lightgrey' : 'lightblue',
-      padding: '20px'
+      backgroundColor: props.done ? 'lightgrey' : 'lightpink',
+      padding: '20px',
+      borderRadius: '12px',
     }}
   >
     <CardHeader
       title={props.title}
       sx={{
-        backgroundColor: 'white',
-        borderRadius: '3px',
+        backgroundColor: '#db7093',
+        borderRadius: '12px',
         padding: '20px',
         textAlign: 'center'
       }}

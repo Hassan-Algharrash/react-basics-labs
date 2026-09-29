@@ -9,7 +9,14 @@ const AddTaskForm = (props) => {
   <Box
   component="form"
   sx={{
-    '& .MuiOutlinedInput-root': { m: 1, width: '30ch' },
+    '& .MuiOutlinedInput-root': { m: 1,
+       width: '30ch',
+       borderColor: '#db7093', 
+        color: 'white',
+        fontWeight: 'bold',
+        fontFamily: 'Copperplate, sans-serif',
+        borderRadius: '8px',
+        letterSpacing: '1px',},
   }}
   onSubmit={props.submit}
 >
@@ -21,6 +28,7 @@ const AddTaskForm = (props) => {
       label="Task Title"
       slotProps={{ inputLabel: { shrink: true } }}
       onChange={(event) => props.change(event)}
+      
     />
   </div>
 
@@ -55,7 +63,13 @@ const AddTaskForm = (props) => {
       sx={{
         m: 1,
         p: 1,
-        width: '95%'
+        width: '95%',
+        backgroundColor: '#db7093', 
+        color: 'white',
+        fontWeight: 'bold',
+        fontFamily: 'Copperplate, sans-serif',
+        borderRadius: '8px',
+        letterSpacing: '1px',
       }}
     >
       Add Task
